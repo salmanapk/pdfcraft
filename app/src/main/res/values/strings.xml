@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PDFCraft</string>
+    <string name="app_tagline">Offline Unlimited PDF Studio</string>
+    <string name="nav_studio">Studio</string>
+    <string name="nav_files">Files</string>
+    <string name="nav_settings">Settings</string>
+    <string name="hero_badge">100% OFFLINE • UNLIMITED • NO ADS</string>
+    <string name="hero_title">Every PDF Tool,\nCompletely Free</string>
+    <string name="hero_subtitle">Process files directly on your device with zero file size limits and complete privacy.</string>
+    <string name="action_scan_doc">Scan Doc</string>
+    <string name="action_open_pdf">View PDF</string>
+    <string name="action_merge">Merge</string>
+    <string name="action_ocr">Offline OCR</string>
+    <string name="section_all_tools">PDF Studio Tools</string>
+    <string name="section_recent_files">Recent Workspace</string>
+    <string name="empty_files_title">No PDFs Created Yet</string>
+    <string name="empty_files_subtitle">Use any Studio tool or import a PDF from your device to view, edit, and manage documents offline.</string>
+    <string name="camera_permission_rationale">Camera permission is needed to scan paper documents directly into PDFCraft.</string>
+    <string name="camera_permission_denied">Camera access was denied. You can still pick photos from your gallery or enable camera access in settings.</string>
+    <string name="btn_share">Share</string>
+    <string name="btn_save_copy">Save to Device</string>
+    <string name="btn_open_viewer">Open PDF</string>
+    <string name="btn_done">Done</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_process">Process PDF</string>
+    <string name="processing_label">Processing on device…</string>
+</resources>

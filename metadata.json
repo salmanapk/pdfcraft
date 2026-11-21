@@ -1,0 +1,6 @@
+{
+  "name": "PDFCraft",
+  "description": "100% free, unlimited, offline-first PDF toolkit for Android with merge, split, compress, scanner, OCR, e-sign, watermark, protect/unlock, and built-in PDF viewer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
