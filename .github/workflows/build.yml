@@ -19,15 +19,33 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
+      - name: Generate Release Keystore
+        run: |
+          keytool -genkeypair -v \
+            -keystore my-upload-key.jks \
+            -keyalg RSA -keysize 2048 -validity 10000 \
+            -alias upload \
+            -storepass android123 \
+            -keypass android123 \
+            -dname "CN=PDFCraft, OU=Dev, O=App, L=Sylhet, S=Sylhet, C=BD"
+
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '9.3.1'
 
       - name: Build Release APK
+        env:
+          KEYSTORE_PATH: ${{ github.workspace }}/my-upload-key.jks
+          STORE_PASSWORD: android123
+          KEY_PASSWORD: android123
         run: gradle assembleRelease
 
       - name: Build Release AAB
+        env:
+          KEYSTORE_PATH: ${{ github.workspace }}/my-upload-key.jks
+          STORE_PASSWORD: android123
+          KEY_PASSWORD: android123
         run: gradle bundleRelease
 
       - name: Upload APK
